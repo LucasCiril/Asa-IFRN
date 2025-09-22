@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+RUN apt update
+
+RUN upgrade apt -y
+
+RUN apt install dnsutils
+
+CMD [ "/bin/bash"]
