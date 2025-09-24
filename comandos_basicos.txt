@@ -1,0 +1,13 @@
+Comandos básicos no Docker
+
+1- Listar imagens: (docker images | docker images ls)
+2- Buscar imagens no Docker hub: (docker search <key>)
+3- Baixar imagens: (docker pull <key>)
+4- Remover imagens: (docker rmi <key> | docker image rm <key>)
+5- Criar containers: (docker run --name <container name> <key>)
+6- Listar containers:(docker ps -a | docker ps) 
+7- Remover containers: (docker rm <key> | docker container rm <key>)
+8- Rodar o container depois de criado: (docker start <key>)
+9- Criar imagem personalizada:
+                                Criar o Dockerfile personalizado;
+                                Construir a imagem: (docker build -t <nome>)
