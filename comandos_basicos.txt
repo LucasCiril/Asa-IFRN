@@ -13,7 +13,7 @@ docker pull <key>
 docker rmi <key> | docker image rm <key>
 
 05- Criar containers: 
-docker run --name <nome> <nome da imagem>
+docker run -it --name <nome> <nome da imagem>
 
 06- Criar imagem personalizada:
 a - Criar o Dockerfile personalizado;

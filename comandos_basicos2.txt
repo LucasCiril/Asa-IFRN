@@ -7,7 +7,7 @@ docker network create <NAME>
 docker network ls
 
 3- Como adicionar um container a uma rede?
-docker run [-dp <HOST_PORT:CONTAINER_PORT>] --net <NET_NAME> <IMAGE_NAME>
+docker run -it [-dp <HOST_PORT:CONTAINER_PORT>] --net <NET_NAME> <IMAGE_NAME>
 
 4- Como excluir uma rede?
 docker network rm <NET_NAME>
