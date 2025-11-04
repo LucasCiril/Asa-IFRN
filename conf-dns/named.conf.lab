@@ -1,0 +1,16 @@
+options {
+    directory "/etc/bind";
+    recursion yes;
+    allow-query { any; };
+    forwarders { };
+};
+
+zone "siteA.lab" {
+    type master;
+    file "/etc/bind/db.siteA.lab";
+};
+
+zone "siteB.lab" {
+    type master;
+    file "/etc/bind/db.siteB.lab";
+};

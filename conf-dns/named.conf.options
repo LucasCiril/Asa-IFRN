@@ -1,0 +1,9 @@
+options {
+    directory "/var/cache/bind";
+    listen-on port 53 { any; };
+    listen-on-v6 { none; };
+    recursion yes;
+    allow-query { any; };
+    forwarders {};
+    dnssec-validation no;
+};

@@ -1,0 +1,13 @@
+$TTL 604800
+@   IN  SOA siteB.lab. root.siteB.lab. (
+        2         ; Serial
+        604800    ; Refresh
+        86400     ; Retry
+        2419200   ; Expire
+        604800 )  ; Negative Cache TTL
+
+@   IN  NS  ns.siteB.lab.
+ns IN  A   172.28.0.10
+
+www IN  A   172.28.0.13
+api IN  A   172.28.0.14
