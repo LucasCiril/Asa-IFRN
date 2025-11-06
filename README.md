@@ -82,7 +82,7 @@ Coloque, no final os seguintes comandos e salve:<br>
 127.0.0.1 www.siteb.lab<br>
 127.0.0.1 api.siteb.lab<br>
 <img src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/host2.png" style="width:70%"><br>
-Teste novamente os IPs, e deve estar tudo funcioando.
+Teste novamente os IPs, e deve estar tudo funcionando.
 </p>
  <img class="hi" src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/itachi-meme-itachi-dan%C3%A7ando.gif" width="300" heigth="300" /><br>
 
