@@ -1,74 +1,36 @@
 services:
   dns-server:
     build: ./conf-dns
-    container_name: dns-server
+    container_name: server-dns
     image: dns-server:lab
     ports:
       - "53:53/tcp"
       - "53:53/udp"
-    networks:
-      labnet:
-        ipv4_address: 172.28.0.10
-    restart: unless-stopped
 
   web1:
     build: ./webtp1
     container_name: web1
+    image: web-server1:lab
     ports:
       - "8081:80"
-    networks:
-      labnet:
-        ipv4_address: 172.28.0.11
-    dns:
-      - 172.28.0.10
-      - 8.8.8.8
-    dns_search: []
-    restart: unless-stopped
-
+  
   web2:
     build: ./webtp2
     container_name: web2
+    image: web-server2:lab
     ports:
-      - "8082:80"
-    networks:
-      labnet:
-        ipv4_address: 172.28.0.12
-    dns:
-      - 172.28.0.10
-      - 8.8.8.8
-    dns_search: []
-    restart: unless-stopped
+    - "8082:80"
 
   web3:
     build: ./webtp3
     container_name: web3
+    image: web-server3:lab
     ports:
-      - "8083:80"
-    networks:
-      labnet:
-        ipv4_address: 172.28.0.13
-    dns:
-      - 172.28.0.10
-      - 8.8.8.8
-    dns_search: []
-    restart: unless-stopped
+    - "8083:80"
 
   web4:
     build: ./webtp4
     container_name: web4
+    image: web-server4:lab
     ports:
-      - "8084:80"
-    networks:
-      labnet:
-        ipv4_address: 172.28.0.14
-    dns:
-      - 172.28.0.10
-      - 8.8.8.8
-    dns_search: []
-    restart: unless-stopped
-
-networks:
-  labnet:
-    ipam:
-      config:
-        - subnet: 172.28.0.0/16
+    - "8084:80"
