@@ -71,24 +71,10 @@ http://www.siteb.lab:8083<br>
 http://api.siteb.lab:8084<br>
 <img src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/web4.png" style="width:70%"><br>
 
-Observação: Caso você tenha mudado o servidor de DNS do seu PC, mas seu sistema operacional é Windows, talvez ainda ocorra um erro. Normalmente, o Windows não consegue encontrar a rede interna do Docker Desktop, e você precisará forçar isso. Para isso, retorne a sua configuração de DNS para automático e após, abra o seu Bloco de Notas como administrador. Feito isso, clique na opção Arquivo -> Abrir. Segue abaixo o caminho que você irá buscar:<br>
-
-Meu Computador (Este Computador) - Disco Local -> Windows -> System32 -> drivers -> etc -> hosts (possivelmente, ele estará em um arquivo em branco. Não use o iCalendar file!)
-Abra o arquivo, que estará assim:
-<img src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/host1.png" style="width:70%"><br>
-Coloque, no final os seguintes comandos e salve:<br>
-127.0.0.1 www.sitea.lab<br>
-127.0.0.1 app.sitea.lab<br>
-127.0.0.1 www.siteb.lab<br>
-127.0.0.1 api.siteb.lab<br>
-<img src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/host2.png" style="width:70%"><br>
-Teste novamente os IPs, e deve estar tudo funcionando.
-</p>
- <img class="hi" src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/itachi-meme-itachi-dan%C3%A7ando.gif" width="300" heigth="300" /><br>
-
  
 <h3 style="text-align:center" >ᯤ⁹⁹⁹   Finalizamos então por aqui. Até a próxima aventura, Invocador!   ᯤ⁹⁹⁹ </a></h3>
-    
+ <img class="hi" src="https://github.com/LucasCiril/Asa-IFRN/blob/main/imagens/itachi-meme-itachi-dan%C3%A7ando.gif" width="300" heigth="300" /><br>
+
 </body>
 </html>
 
